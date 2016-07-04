@@ -38,6 +38,7 @@ For the microcontroller
 * 3.5mm stereo audio jack
 * 10K ohm resistor (for pulldown)
 
+In addition, you need to install some of the ["DSEG"](http://www.keshikan.net/fonts-e.html) fonts.
 
 ## How to run
 Upload the cycle.ino sketch onto a Digispark. Any other Arduino will also work with slight modifications to the serial commands.
