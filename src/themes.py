@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""themes.py: information about fonts and colors
+
+These classes are intended to be used statically.
+"""
+
 class Orange:
     inactive_color = "#E27206"
     active_color = "#222222"

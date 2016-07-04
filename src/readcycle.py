@@ -1,3 +1,15 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""readcycle.py: model of a stationary bicycle
+
+The Cycle class serves two purposes:
+
+  1. communication with a Digispark/Arduino microcontroller
+  2. backend to the cycle UI
+"""
+
+
 import serial
 import time
 import datetime
@@ -25,6 +37,8 @@ class Cycle:
     
 
     def __init__(self):
+        """trys to connect to the arduino"""
+
         try:  # connect to arduino
             self.ser = serial.Serial(self._port, self._rate, timeout=0.1) 
             self.ser.setDTR(1)

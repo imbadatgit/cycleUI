@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""ui.py: user interface view and controller components"""
 
 from Tkinter import *
 import time

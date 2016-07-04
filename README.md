@@ -1,25 +1,43 @@
 ### Cycle UI
 
-Cycle UI is a tool to read out and visualize the data from a stationary
-bicycle. This way, you (i.e., I) can place a laptop over the bicycle
-computer and yet be able to monitor your progress. The connection to the
-bicycle is established with a [Digispark
+![alt text](http:// "UI features")
+
+Cycle UI is a desktop tool to read out and visualize the data from a
+stationary bicycle. This way, you can place a laptop over the
+bicycle computer and yet be able to monitor your progress. The
+connection to the bicycle is established with a [Digispark
 microcontroller](http://digistump.com/products/1).
+
 
 ## Features
 
-So far, the UI features basic functionality. It displays 
+So far, the UI features the following basic functionality, displaying
 
 * _active ride time_, i.e., time spent on the bicycle during which the wheels were actually turning,
 * _speed_, which is really just a guesstimate calculated from
 * _revelations per minute_,
-* and _total number of revelations_.
+* and the _total number of revelations_.
 
-Here's a quick screenshot of the UI in action, shown above a random YouTube cycling video:
+In addition, speed is plotted on a graph to keep me motivated. Here's a
+quick screenshot of the UI in action, shown above a random YouTube
+cycling video:
 
 ![alt text](http:// "UI in action")
 
 The overlay stays on top and is quite unintrusive. 
+
+## Requirements
+
+Python
+
+* pySerial (tested with version 2.6)
+
+For the microcontroller
+
+* Digispark or some other Arduino-like board
+* 3.5mm stereo audio jack
+* 10K ohm resistor (for pulldown)
+
 
 ## How to run
 Upload the cycle.ino sketch onto a Digispark. Any other Arduino will also work with slight modifications to the serial commands.
@@ -39,7 +57,6 @@ but instead connects to the left and right channel.
 
 I simply connected these to the pin #2 and 5v on the Digispark. I
 further added a pulldown resistor between pin #2 and ground. The
-Digispark then counts revolutions and measures the time between them to
-calculate speed, distance, and potentially other useful stats (not
-implemented).
+Digispark counts revolutions and measures the time between, from which
+the UI calculates speed and distance.
 

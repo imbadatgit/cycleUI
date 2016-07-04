@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""hist.py: implementation of a ring buffer to store a history of numbers"""
 
 class HistoryIter:
     """iterator over history in chronological order"""
@@ -28,7 +32,7 @@ class HistoryIter:
         return current
 
 class History:            
-    """implementation of a history of elements, essentially a queue"""
+    """implementation of a history of numbers, essentially a queue"""
     def __init__(self, histlen):
         self.histlen = histlen
         self.hist = [None] * histlen
