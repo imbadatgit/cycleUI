@@ -1,6 +1,6 @@
 ### Cycle UI
 
-![alt text](http:// "UI features")
+![alt text](https://github.com/imbadatgit/cycleUI/blob/master/doc/ui-cut.png "UI features")
 
 Cycle UI is a desktop tool to read out and visualize the data from a
 stationary bicycle. This way, you can place a laptop over the
@@ -22,7 +22,7 @@ In addition, speed is plotted on a graph to keep me motivated. Here's a
 quick screenshot of the UI in action, shown above a random YouTube
 cycling video:
 
-![alt text](http:// "UI in action")
+![alt text](https://github.com/imbadatgit/cycleUI/blob/master/doc/in-action.png "UI in action")
 
 The overlay stays on top and is quite unintrusive. 
 
