@@ -42,9 +42,11 @@ For the microcontroller
 ## How to run
 Upload the cycle.ino sketch onto a Digispark. Any other Arduino will also work with slight modifications to the serial commands.
 
-Then connect the Digispark to your computer and start the ui:
+Then connect the Digispark to your computer (via the primary USB port) and start the UI:
 
     python ui.py
+
+Depending on your OS settings, you may have to change USB permissions for this to work.
 
 ## Wiring 
 
