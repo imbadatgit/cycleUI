@@ -61,5 +61,6 @@ but instead connects to the left and right channel.
 I simply connected these to the pin #2 and 5v on the Digispark. I
 further added a pulldown resistor between pin #2 and ground. The
 Digispark counts revolutions and measures the time between, from which
-the UI calculates speed and distance.
+the UI calculates speed and distance. 
 
+![alt text](https://github.com/imbadatgit/cycleUI/blob/master/doc/cycle_bb.png "Digispark cycling controller schematics")
